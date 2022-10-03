@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="225dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Name: "
+                android:textStyle="bold"
+            />
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Person's Name"
+                android:minLines="1"
+                android:maxLines="2"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="ID: "
+                android:textStyle="bold"
+            />
+
+            <TextView
+                android:id="@+id/textID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Birth Date: "
+                android:textStyle="bold"
+            />
+
+            <CalendarView
+                android:id="@+id/calendarBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Hometown: "
+                android:textStyle="bold"
+            />
+
+            <EditText
+                android:id="@+id/textCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Nationality: "
+                android:textStyle="bold"
+            />
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Sex: "
+                android:textStyle="bold"
+            />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="80dp"
+                    android:text="Male"
+                />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="50dp">
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="25dp"
+                    android:text="Save"
+                />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cancel"
+                />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

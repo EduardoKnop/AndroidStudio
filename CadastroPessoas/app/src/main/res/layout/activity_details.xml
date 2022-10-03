@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewPerson"
+        android:layout_width="225dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="16dp"
+        android:background="@color/gray"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Name: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nome"
+            android:minLines="1"
+            android:maxLines="2"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="ID: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Birth Date: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewBirthDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="xx/xx/xxxx"
+        />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Age: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxx years old"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Hometown: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewHometown"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="city"
+            android:minLines="1"
+            android:maxLines="3"
+        />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Nationality: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewNationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="country"
+            android:minLines="1"
+            android:maxLines="3"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Sex: "
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/textViewSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="male/female"
+        />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="50dp"
+                android:text="Edit"
+            />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:text="Remove"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
